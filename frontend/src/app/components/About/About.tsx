@@ -6,30 +6,25 @@ interface Props {
     children: ReactNode;
     image: StaticImageData;
     alt: string;
+    title: string;
+    paragraph1: string;
+    paragraph2: string;
 }
 
-const About = ({ children, image, alt }: Props) => {
+const About = ({
+    children,
+    image,
+    alt,
+    title,
+    paragraph1,
+    paragraph2,
+}: Props) => {
     return (
         <div className={styles.container}>
             <div className={styles.description}>
-                <h3>Hi! 👋🏼</h3>
-                <p>
-                    non ad deserunt pariatur ullamco labore ullamco aute labore
-                    ad ut sunt amet excepteur et sunt aliqua Lorem deserunt eu
-                    commodo labore consectetur ipsum id ex consequat consequat
-                    consectetur enim cupidatat adipisicing aute sit consequat
-                    anim exercitation sint id ad id anim minim dolore
-                    reprehenderit reprehenderit veniam minim adipisicing
-                    deserunt laborum nulla reprehenderit nostrud adipisicing
-                    elit amet consectetur
-                </p>
-                <p>
-                    duis commodo aliqua non fugiat anim deserunt adipisicing
-                    sunt ipsum anim aliquip ea amet veniam enim Lorem mollit
-                    quis culpa dolore qui ipsum non minim anim consequat laborum
-                    ullamco quis sit ut cupidatat qui adipisicing exercitation
-                    Lorem occaecat do cupidatat ipsum aute
-                </p>
+                <h3>{title}</h3>
+                <p>{paragraph1}</p>
+                {paragraph2 && <p>{paragraph2}</p>}
                 <Image className={styles.auxilliary} src={image} alt={alt} />
             </div>
             {children}
