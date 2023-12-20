@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+
+    --vert-padding: 10rem;
+    padding-right: 5rem;
+    margin: var(--vert-padding) 15rem;
+
+    position: relative;
+    max-height: calc(100vh - 2 * var(--vert-padding));   
+}
+
+.description {
+    flex: 1 1 0;
+}
+
+.auxilliary {
+    position: absolute;
+
+    height: 12vh;
+    width: auto;
+    object-fit: contain;
+
+    left: 5rem;
+    bottom: 15rem;
+}

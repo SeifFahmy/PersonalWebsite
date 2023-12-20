@@ -3,6 +3,7 @@
 :root {
     --backgroundColour: #0c0c0e;
     --fontColour: #fff;
+    --accentColour: #146ef5;
 }
 
 html {
@@ -26,4 +27,16 @@ body {
 .layout {
     display: grid;
     grid-template-columns: 12rem 1fr;
+}
+
+h3 {
+    font-size: 3rem;
+    letter-spacing: -0.1;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.8rem;
+    max-width: 45ch;
+    line-height: 1.1;
 }
