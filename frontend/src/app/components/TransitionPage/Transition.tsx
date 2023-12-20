@@ -2,6 +2,8 @@ import Image, { StaticImageData } from "next/image";
 import styles from "./Transition.module.css";
 
 interface Props {
+    title: string;
+
     hero: StaticImageData;
     heroAlt: string;
 
@@ -13,6 +15,7 @@ interface Props {
 }
 
 const Transition = ({
+    title,
     hero,
     heroAlt,
     auxiliary1,
@@ -21,7 +24,8 @@ const Transition = ({
     auxiliary2Alt,
 }: Props) => {
     return (
-        <>
+        <div className={styles.container}>
+            <h2>{title}</h2>
             <div className={styles.heroContainer}>
                 <Image className={styles.hero} src={hero} alt={heroAlt} />
                 <span className={styles.blur}></span>
@@ -36,7 +40,7 @@ const Transition = ({
                 src={auxiliary2}
                 alt={auxiliary2Alt}
             />
-        </>
+        </div>
     );
 };
 

@@ -1,10 +1,22 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    
+    height: 100vh;
+    width: 100vw;
+
+    --header-margin: 10rem;
+}
+
+.container h2 {
+    margin-top: var(--header-margin);
+    margin-left: 15rem;
+}
+
 .heroContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    height: 100vh;
-    width: 100vw;
 
     position: relative;
     --hero-size: 75vh;
@@ -33,7 +45,7 @@
 .auxilliary {
     position: absolute;
 
-    height: 15vh;
+    height: 13vh;
     width: auto;
     object-fit: contain;
 
@@ -43,7 +55,7 @@
 
 .aux1 {
     right: var(--horizontal-margin);
-    top: var(--vertical-margin);
+    top: calc(var(--vertical-margin) + var(--header-margin));
 }
 
 .aux2 {

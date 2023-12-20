@@ -24,7 +24,8 @@
     white-space: nowrap;
 
     --transition-duration: 0.4s;
-    transition: transform var(--transition-duration);
+    transition: transform var(--transition-duration),
+        font-weight var(--transition-duration);
     position: relative;
 }
 
@@ -51,6 +52,7 @@
 .navbarSection:hover,
 .navbarSection:focus {
     transform: scale(1.2);
+    font-weight: 600;
 }
 
 .navbarSection:hover::before,
