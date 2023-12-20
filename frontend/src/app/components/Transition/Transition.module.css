@@ -1,0 +1,52 @@
+.heroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    position: relative;
+    --hero-size: 75vh;
+}
+
+.hero {
+    height: var(--hero-size);
+    width: auto;
+    object-fit: contain;
+    position: relative;
+}
+
+.blur {
+    background: radial-gradient(#146ef5, var(--backgroundColour));
+    filter: blur(200px);
+    border-radius: 30%;
+
+    --size-factor: 0.9;
+    height: calc(var(--hero-size) * var(--size-factor));
+    width: calc(var(--hero-size) * var(--size-factor) * 0.7);
+
+    position: absolute;
+    z-index: -1;
+}
+
+.auxilliary {
+    position: absolute;
+
+    height: 15vh;
+    width: auto;
+    object-fit: contain;
+
+    --horizontal-margin: 25rem;
+    --vertical-margin: 10rem;
+}
+
+.aux1 {
+    right: var(--horizontal-margin);
+    top: var(--vertical-margin);
+}
+
+.aux2 {
+    left: var(--horizontal-margin);
+    bottom: var(--vertical-margin);
+}
