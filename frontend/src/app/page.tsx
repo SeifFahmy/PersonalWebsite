@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar";
 import Title from "./components/Title";
-import Transition from "./components/Transition";
+import Transition from "./components/TransitionPage";
 import bird from "@public/bird.webp";
 import trip from "@public/trip.svg";
 import map from "@public/map.svg";
