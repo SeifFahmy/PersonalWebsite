@@ -29,7 +29,8 @@
     position: relative;
 }
 
-.navbarSection:link {
+.navbarSection:link,
+.navbarSection:visited {
     color: var(--fontColour);
     outline-color: transparent;
     text-decoration: none;

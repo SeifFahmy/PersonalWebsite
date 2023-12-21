@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+    justify-content: center;
+
+    --vert-padding: 10rem;
+    padding-right: 5rem;
+    margin: var(--vert-padding) 15rem;
+
+    position: relative;
+    max-height: calc(100vh - 2 * var(--vert-padding));
+}
+
+.aboutContainer {
+    flex: 1 1 0;
+    margin-left: 2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    --highlight-size: 15.5rem;
+
+    border: 1px solid red;
+}
+
+.highlights {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+
+    padding-top: 2rem;
+    flex: 1 1 0;
+}
+
+.highlight {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.highlight img,
+.highlight svg {
+    height: var(--highlight-size);
+    width: var(--highlight-size);
+
+    padding: 4rem;
+    margin-right: 2rem;
+
+    background-color: #1a1a1a;
+    border-radius: 1.6rem;
+
+    fill: var(--accentColour);
+}
+
+.highlight span {
+    display: block;
+    margin-top: 1rem;
+
+    font-size: 1.6rem;
+    color: #bebebf;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    max-width: calc(3 * (var(--highlight-size) + 2rem));
+
+    padding: 3rem 2rem;
+}
+
+.button {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 2rem;
+    padding: 1.5rem;
+    height: 6rem;
+
+    background-color: var(--accentColour);
+    border: none;
+    border-radius: 10rem;
+
+    transition: padding 0.4s;
+}
+
+.button:link,
+.button:visited {
+    color: var(--fontColour);
+    outline-color: transparent;
+    text-decoration: none;
+}
+
+.button:hover {
+    padding: 1.5rem 2.5rem;
+}
+
+.button img,
+.button svg {
+    --size: 4rem;
+    height: var(--size);
+    width: var(--size);
+
+    padding: 0.5rem;
+    margin-right: 1rem;
+
+    background-color: white;
+    border-radius: 100%;
+
+    fill: var(--backgroundColour);
+}
+
+.button span {
+    color: var(--backgroundColour);
+    font-weight: 500;
+    font-size: 1.8rem;
+    white-space: nowrap;
+}
