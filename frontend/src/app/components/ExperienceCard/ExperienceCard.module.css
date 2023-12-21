@@ -1,12 +1,69 @@
 .card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
     flex: 1 1 0;
-    
     margin-left: 2rem;
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    position: inherit;
+    position: relative;
 
     border-radius: 1.2rem;
-    z-index: -2;
+    border: 0.15rem solid var(--accentColour);
+    --animation-time: 0.4s;
+    transition: color var(--animation-time),
+        background-color var(--animation-time), box-shadow var(--animation-time);
+}
+
+.card:link {
+    color: var(--fontColour);
+    outline-color: transparent;
+    text-decoration: none;
+}
+
+.card:hover {
+    background-color: var(--accentColour);
+    color: var(--backgroundColour);
+    box-shadow: 0 0 12rem -1rem var(--accentColour);
+}
+
+.cardItem {
+    display: block;
+    margin-left: 5rem;
+}
+
+.title {
+    margin-top: 5rem;
+
+    font-size: 3rem;
+    font-weight: 300;
+    width: 15ch;
+}
+
+.highlight {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.context {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+}
+
+.button {
+    position: relative;
+
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    margin-left: 0.5rem;
+    transition: transform ease-out var(--animation-time);
+}
+
+.card:hover .arrow {
+    transform: translate(1.5rem);
 }

@@ -8,7 +8,7 @@ const AboutExperiencePage = () => {
         <div className="layout">
             <NavBar />
             <About
-                title="Experience"
+                title="Automated Rationalisation"
                 paragraph1="non ad deserunt pariatur ullamco labore ullamco aute labore
             ad ut sunt amet excepteur et sunt aliqua Lorem deserunt eu
             commodo labore consectetur ipsum id ex consequat consequat
@@ -21,7 +21,11 @@ const AboutExperiencePage = () => {
                 image={trip}
                 alt="trip alt"
             >
-                <ExperienceCard />
+                <ExperienceCard
+                    title="Automated Rationalisation"
+                    highlight="£700k"
+                    context="saved in cost of materials"
+                />
             </About>
         </div>
     );
