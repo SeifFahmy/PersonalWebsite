@@ -1,4 +1,6 @@
+import bird from "@public/bird.webp";
 import logo from "@public/logo.svg";
+import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 import { AiOutlineGithub } from "react-icons/ai";
 import { RiMoneyPoundCircleLine } from "react-icons/ri";
@@ -6,6 +8,7 @@ import { RiMoneyPoundCircleLine } from "react-icons/ri";
 export type projectPage = "Project1" | "Project2" | "Project3";
 export type highlight = { icon: ReactNode; text: string };
 export type button = { icon: ReactNode; text: string; link: string };
+export type projectModel = { model: StaticImageData };
 
 const pageProperties = {
     Project1: {
@@ -30,6 +33,7 @@ const pageProperties = {
                 link: "https://github.com/SeifFahmy",
             },
         ],
+        model: bird,
     },
 
     Project2: {
@@ -48,6 +52,7 @@ const pageProperties = {
                 link: "https://github.com/SeifFahmy",
             },
         ],
+        model: bird,
     },
 
     Project3: {
@@ -66,6 +71,7 @@ const pageProperties = {
                 link: "https://github.com/SeifFahmy",
             },
         ],
+        model: bird,
     },
 };
 

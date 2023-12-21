@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import styles from "./AboutProject.module.css";
 import { button, highlight } from "@/app/hooks/useProject";
-import Image from "next/image";
+import { StaticImageData } from "next/image";
 import Link from "next/link";
 
 interface Props {
@@ -10,6 +10,7 @@ interface Props {
     text: string[];
     highlights: highlight[];
     buttons: button[];
+    model: StaticImageData;
 }
 
 const AboutProject = ({

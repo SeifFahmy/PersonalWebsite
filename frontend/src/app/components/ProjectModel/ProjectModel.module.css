@@ -1,0 +1,15 @@
+.container {
+    flex: 1 1 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    max-width: 50vw;
+}
+
+.model {
+    height: 100%;
+    width: auto;
+}

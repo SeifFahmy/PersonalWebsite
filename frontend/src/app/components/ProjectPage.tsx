@@ -1,6 +1,7 @@
 import useProject, { projectPage } from "../hooks/useProject";
 import NavBar from "./NavBar";
 import AboutProject from "./AboutProject";
+import ProjectModel from "./ProjectModel";
 
 const ProjectPage = ({ page }: { page: projectPage }) => {
     const properties = useProject(page);
@@ -9,7 +10,7 @@ const ProjectPage = ({ page }: { page: projectPage }) => {
         <div className="layout">
             <NavBar />
             <AboutProject {...properties!}>
-                <p>project model</p>
+                <ProjectModel model={properties.model} />
             </AboutProject>
         </div>
     );
