@@ -1,10 +1,19 @@
 import AboutExperiencePage from "./components/AboutExperiencePage";
-import AboutMeCard from "./components/AboutMeCard";
 import AboutMePage from "./components/AboutMePage";
+import TitlePage from "./components/TitlePage";
 import TransitionPage from "./components/TransitionPage";
 
 const page = () => {
-    return <AboutExperiencePage />;
+    return (
+        <>
+            <TitlePage />
+            <TransitionPage />
+            <AboutMePage />
+            <TransitionPage />
+            <AboutExperiencePage />
+            <TransitionPage />
+        </>
+    );
 };
 
 export default page;

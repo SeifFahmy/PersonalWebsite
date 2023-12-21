@@ -1,6 +1,6 @@
+import mouse from "@public/mouse.webp";
 import Image from "next/image";
 import styles from "./Title.module.css";
-import mouse from "@public/mouse.webp"
 
 const Title = () => {
     return (
