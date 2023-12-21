@@ -7,24 +7,17 @@ interface Props {
     image: StaticImageData;
     alt: string;
     title: string;
-    paragraph1: string;
-    paragraph2: string;
+    text: string[];
 }
 
-const About = ({
-    children,
-    image,
-    alt,
-    title,
-    paragraph1,
-    paragraph2,
-}: Props) => {
+const About = ({ children, image, alt, title, text }: Props) => {
     return (
         <div className={styles.container}>
             <div className={styles.description}>
                 <h3>{title}</h3>
-                <p>{paragraph1}</p>
-                {paragraph2 && <p>{paragraph2}</p>}
+                {text.map((paragraph) => (
+                    <p>{paragraph}</p>
+                ))}
                 <Image className={styles.auxilliary} src={image} alt={alt} />
             </div>
             {children}
