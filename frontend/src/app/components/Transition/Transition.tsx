@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "./Transition.module.css";
 
-interface Props {
+interface TransitionProps {
     title: string;
 
     hero: StaticImageData;
@@ -22,7 +22,7 @@ const Transition = ({
     auxiliary1Alt,
     auxiliary2,
     auxiliary2Alt,
-}: Props) => {
+}: TransitionProps) => {
     return (
         <div className={styles.container}>
             <h2>{title}</h2>

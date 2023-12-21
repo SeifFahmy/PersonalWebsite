@@ -7,11 +7,11 @@ const page = () => {
     return (
         <>
             <TitlePage />
-            <TransitionPage />
+            <TransitionPage page="About" />
             <AboutMePage />
-            <TransitionPage />
+            <TransitionPage page="Experience" />
             <AboutExperiencePage />
-            <TransitionPage />
+            <TransitionPage page="Projects" />
         </>
     );
 };

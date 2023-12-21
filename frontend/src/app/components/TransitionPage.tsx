@@ -1,20 +1,10 @@
-import bird from "@public/bird.webp";
-import map from "@public/map.svg";
-import trip from "@public/trip.svg";
+import useTransition, { transitionPage } from "../hooks/useTransition";
 import Transition from "./Transition";
 
-const TransitionPage = () => {
-    return (
-        <Transition
-            title="About Me"
-            hero={bird}
-            heroAlt="bird"
-            auxiliary1={map}
-            auxiliary1Alt="map"
-            auxiliary2={trip}
-            auxiliary2Alt="trip"
-        />
-    );
+const TransitionPage = ({ page }: { page: transitionPage }) => {
+    const properties = useTransition(page);
+
+    return <Transition {...properties!} />;
 };
 
 export default TransitionPage;
