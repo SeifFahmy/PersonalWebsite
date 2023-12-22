@@ -1,4 +1,5 @@
 import AboutMePage from "./components/AboutMePage";
+import AwardsPage from "./components/AwardsPage";
 import ExperiencePage from "./components/ExperiencePage";
 import ProjectPage from "./components/ProjectPage";
 import TitlePage from "./components/TitlePage";
@@ -15,6 +16,8 @@ const page = () => {
             <TransitionPage page="Projects" />
             <ProjectPage page="Project1" />
             <TransitionPage page="Awards" />
+            <AwardsPage />
+            <TransitionPage page="Contact" />
         </>
     );
 };

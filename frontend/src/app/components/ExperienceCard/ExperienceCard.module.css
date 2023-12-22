@@ -29,6 +29,10 @@
     box-shadow: 0 0 12rem -1rem var(--accentColour);
 }
 
+.card span {
+    line-height: 1.2;
+}
+
 .cardItem {
     display: block;
     margin-left: 5rem;
@@ -79,6 +83,7 @@
 
 .arrow {
     position: absolute;
+    
     margin-left: 0.5rem;
     transition: transform ease-out var(--animation-time);
 }
