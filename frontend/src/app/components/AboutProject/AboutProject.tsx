@@ -25,20 +25,21 @@ const AboutProject = ({
             {children}
             <div className={styles.aboutContainer}>
                 <h3>{title}</h3>
-                {text.map((text) => (
-                    <p>{text}</p>
+                {text.map((text, i) => (
+                    <p key={i}>{text}</p>
                 ))}
                 <div className={styles.highlights}>
-                    {highlights.map((highlight) => (
-                        <div className={styles.highlight}>
+                    {highlights.map((highlight, i) => (
+                        <div key={i} className={styles.highlight}>
                             {highlight.icon}
                             <span>{highlight.text}</span>
                         </div>
                     ))}
                 </div>
                 <div className={styles.buttons}>
-                    {buttons.map((button) => (
+                    {buttons.map((button, i) => (
                         <Link
+                            key={i}
                             className={styles.button}
                             href={button.link}
                             target="_blank"

@@ -15,8 +15,8 @@ const About = ({ children, image, alt, title, text }: Props) => {
         <div className={styles.container}>
             <div className={styles.description}>
                 <h3>{title}</h3>
-                {text.map((paragraph) => (
-                    <p>{paragraph}</p>
+                {text.map((paragraph, i) => (
+                    <p key={i}>{paragraph}</p>
                 ))}
                 <Image className={styles.auxilliary} src={image} alt={alt} />
             </div>
