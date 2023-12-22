@@ -1,19 +1,19 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 import styles from "./ExperienceCard.module.css";
-import { HiArrowNarrowRight } from "react-icons/hi";
 
 interface Props {
-    title: string;
+    icon: ReactNode;
     highlight: string;
     context: string;
 }
 
-const ExperienceCard = ({ title, highlight, context }: Props) => {
+const ExperienceCard = ({ icon, highlight, context }: Props) => {
     return (
         <Link href="#" className={styles.card}>
-            <span className={[styles.cardItem, styles.title].join(" ")}>
-                {title}
-            </span>
+            <div className={[styles.cardItem, styles.icon].join(" ")}>
+                {icon}
+            </div>
             <div>
                 <span className={[styles.cardItem, styles.highlight].join(" ")}>
                     {highlight}

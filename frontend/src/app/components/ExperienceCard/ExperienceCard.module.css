@@ -16,7 +16,8 @@
         background-color var(--animation-time), box-shadow var(--animation-time);
 }
 
-.card:link {
+.card:link,
+.card:visited {
     color: var(--fontColour);
     outline-color: transparent;
     text-decoration: none;
@@ -39,6 +40,24 @@
     font-size: 3rem;
     font-weight: 300;
     width: 15ch;
+}
+
+.icon {
+    margin-top: 5rem;
+
+    --size: 7rem;
+    height: var(--size);
+    width: var(--size);
+
+    fill: white;
+    stroke: white;
+
+    transition: fill var(--animation-time), stroke var(--animation-time);
+}
+
+.card:hover .icon {
+    fill: var(--backgroundColour);
+    stroke: var(--backgroundColour);
 }
 
 .highlight {
