@@ -1,5 +1,6 @@
 import AboutMePage from "./components/AboutMePage";
 import AwardsPage from "./components/AwardsPage";
+import ContactPage from "./components/ContactPage";
 import ExperiencePage from "./components/ExperiencePage";
 import ProjectPage from "./components/ProjectPage";
 import TitlePage from "./components/TitlePage";
@@ -8,7 +9,7 @@ import TransitionPage from "./components/TransitionPage";
 const page = () => {
     return (
         <>
-            <TitlePage />
+            {/* <TitlePage />
             <TransitionPage page="About" />
             <AboutMePage />
             <TransitionPage page="Experience" />
@@ -17,7 +18,8 @@ const page = () => {
             <ProjectPage page="Project1" />
             <TransitionPage page="Awards" />
             <AwardsPage />
-            <TransitionPage page="Contact" />
+            <TransitionPage page="Contact" /> */}
+            <ContactPage />
         </>
     );
 };
