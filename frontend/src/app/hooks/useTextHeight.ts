@@ -3,6 +3,7 @@ import { RefObject, useState } from "react";
 const useTextHeight = (ref: RefObject<HTMLTextAreaElement>) => {
     const [text, setText] = useState("");
 
+    // to trigger refresh
     const handleChange = () => {
         setText(ref.current?.value || "");
     };
@@ -10,18 +11,12 @@ const useTextHeight = (ref: RefObject<HTMLTextAreaElement>) => {
     let newHeight = "45px";
 
     const messageElement = ref.current;
-    if (messageElement) {
-        const lineHeight = parseInt(
-            getComputedStyle(messageElement).getPropertyValue("line-height")
-        );
+    if (messageElement && messageElement.value != "") {
         const height = messageElement.scrollHeight;
-        const numLines = height / lineHeight;
-        newHeight = `${Math.max(numLines * lineHeight, 45)}px`;
+        newHeight = `${Math.max(height, 45)}px`;
     }
 
-    console.log(newHeight)
-
-    return { text, newHeight, handleChange };
+    return { newHeight, handleChange };
 };
 
 export default useTextHeight;

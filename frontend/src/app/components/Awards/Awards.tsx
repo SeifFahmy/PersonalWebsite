@@ -27,6 +27,22 @@ const Awards = () => {
                         </tr>
                     ))}
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colSpan={2}>Number of awards</td>
+                        <td>
+                            {"x" +
+                                awards.reduce(
+                                    (number, additional) =>
+                                        number +
+                                        parseInt(
+                                            additional.number.substring(1)
+                                        ),
+                                    0
+                                )}
+                        </td>
+                    </tr>
+                </tfoot>
             </table>
         </div>
     );

@@ -5,7 +5,7 @@ import useTextHeight from "@/app/hooks/useTextHeight";
 import Link from "next/link";
 
 const Contact = () => {
-    // used to manage field label transition
+    // used to manage field label transition as user clicks on field
     const {
         emailRef,
         messageRef,
@@ -21,22 +21,33 @@ const Contact = () => {
         handleBlur,
     } = useContactTransition();
 
-    // used to update textarea height as user types
+    // used to update textarea element's height as user types
     const {
-        text: message,
         newHeight,
         handleChange,
     } = useTextHeight(messageRef);
 
     return (
         <div className={styles.container}>
+            {/* Header */}
             <h3>Get in touch!</h3>
             <p>
                 If you'd like to know more about the work I've done or just want
                 to get in touch, feel free to email me by filling in the form
-                below.
+                below or message me on{" "}
+                <Link
+                    href="https://www.linkedin.com/in/seif-fahmy/"
+                    target="_blank"
+                    aria-label="Personal LinkedIn Profile"
+                >
+                    LinkedIn
+                </Link>
+                .
             </p>
+
+            {/* Form */}
             <form className={styles.form}>
+                {/* Email field */}
                 <div className={styles.field}>
                     <label
                         className={[
@@ -64,6 +75,8 @@ const Contact = () => {
                     />
                     <div className={styles.divider} />
                 </div>
+
+                {/* Message field */}
                 <div className={styles.field}>
                     <label
                         className={[
@@ -79,8 +92,7 @@ const Contact = () => {
                     <textarea
                         ref={messageRef}
                         id="message"
-                        value={message}
-                        onChange={handleChange}
+                        onInput={handleChange}
                         onFocus={() => handleFocus(setFocusedMessage)}
                         onBlur={() =>
                             handleBlur(
@@ -93,8 +105,10 @@ const Contact = () => {
                     />
                     <div className={styles.divider} />
                 </div>
+
+                {/* Form button */}
                 <Link className={styles.button} href="#" target="_blank">
-                    Send
+                    Send Message
                 </Link>
             </form>
         </div>

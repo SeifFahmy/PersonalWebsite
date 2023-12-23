@@ -1,7 +1,7 @@
 .container {
     display: flex;
-    align-items: flex-start;
     flex-flow: column nowrap;
+    align-items: flex-start;
 
     --vert-padding: 10rem;
     padding-right: 5rem;
@@ -12,11 +12,16 @@
 }
 
 .container p {
-    /* margin-bottom: 3rem; */
     max-width: 100%;
 }
 
+.container p a {
+    color: var(--fontColour);
+    outline-color: transparent;
+}
+
 .form {
+    align-self: center;
     width: 100%;
 
     display: flex;
@@ -36,7 +41,6 @@
     color: var(--fontColour);
 
     font-size: 1.8rem;
-    max-width: 45ch;
     line-height: 1.6;
     font-weight: 300;
     letter-spacing: 0.05rem;
@@ -55,8 +59,7 @@
     overflow: auto;
     resize: none;
 
-    min-height: 10px;
-    height: 4.5rem;
+    min-height: 4.5rem;
     max-height: 30vh;
 
     text-wrap: wrap;
@@ -65,10 +68,7 @@
 }
 
 .field {
-    width: 50%;
-
-    /* --inputUnderlineColor: var(--accentColour);
-    box-shadow: 0 2px 0 0 var(--inputUnderlineColor); */
+    width: 60%;
 }
 
 .fieldLabel {
@@ -94,7 +94,7 @@
 .divider {
     position: relative;
 
-    background-color: #1a1a1a;
+    background-color: #404040;
     width: 100%;
     height: 2px;
     transform-origin: left;
@@ -121,7 +121,7 @@
     font-size: 1.8rem;
     white-space: nowrap;
 
-    transition: padding 0.4s;
+    transition: padding var(--animation-speed);
 }
 
 .button:link,

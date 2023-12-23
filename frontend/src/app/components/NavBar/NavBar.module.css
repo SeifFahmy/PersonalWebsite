@@ -36,7 +36,7 @@
     text-decoration: none;
 }
 
-.navbarSection::before {
+.navbarSection:not(.logo)::before {
     content: "";
     background: radial-gradient(white, var(--backgroundColour));
     filter: blur(25px);
@@ -50,7 +50,7 @@
     transition: opacity var(--transition-duration);
 }
 
-.navbarSection:hover,
+.navbarSection:not(.logo):hover,
 .navbarSection:focus {
     transform: scale(1.2);
     font-weight: 600;
@@ -61,15 +61,16 @@
     opacity: 1;
 }
 
-/* svg set to black colour, and is coloured in css using filter property */
 .logo {
-    --size: 5rem;
-    width: var(--size);
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    --size: 5.5rem;
     height: var(--size);
+    width: var(--size);
 
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
-        brightness(102%) contrast(102%);
-
+    fill: white;
     transition: transform var(--transition-duration);
 }
 
