@@ -22,19 +22,16 @@ const Contact = () => {
     } = useContactTransition();
 
     // used to update textarea element's height as user types
-    const {
-        newHeight,
-        handleChange,
-    } = useTextHeight(messageRef);
+    const { newHeight, handleChange } = useTextHeight(messageRef);
 
     return (
         <div className={styles.container}>
             {/* Header */}
             <h3>Get in touch!</h3>
             <p>
-                If you'd like to know more about the work I've done or just want
-                to get in touch, feel free to email me by filling in the form
-                below or message me on{" "}
+                If you&apos;d like to know more about the work I&apos;ve done or
+                just want to get in touch, feel free to email me by filling in
+                the form below or message me on{" "}
                 <Link
                     href="https://www.linkedin.com/in/seif-fahmy/"
                     target="_blank"

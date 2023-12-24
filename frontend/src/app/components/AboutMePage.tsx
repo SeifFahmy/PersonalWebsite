@@ -1,4 +1,4 @@
-import trip from "@public/trip.svg";
+import trip from "@public/images/trip.svg";
 import About from "./About";
 import AboutMeCard from "./AboutMeCard";
 import NavBar from "./NavBar";

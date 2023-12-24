@@ -1,6 +1,6 @@
-import bird from "@public/bird.webp";
-import map from "@public/map.svg";
-import trip from "@public/trip.svg";
+import bird from "@public/images/bird.webp";
+import map from "@public/images/map.svg";
+import trip from "@public/images/trip.svg";
 
 export type transitionPage =
     | "About"

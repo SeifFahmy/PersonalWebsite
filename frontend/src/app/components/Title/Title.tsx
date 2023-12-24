@@ -1,4 +1,4 @@
-import mouse from "@public/mouse.webp";
+import mouse from "@public/images/mouse.webp";
 import Image from "next/image";
 import styles from "./Title.module.css";
 

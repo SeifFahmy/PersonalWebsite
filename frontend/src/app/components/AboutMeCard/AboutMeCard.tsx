@@ -1,5 +1,5 @@
-import hero from "@public/bird.webp";
-import personalPic from "@public/personal-picture.png";
+import hero from "@public/images/bird.webp";
+import personalPic from "@public/images/personal-picture.png";
 import Image from "next/image";
 import styles from "./AboutMeCard.module.css";
 

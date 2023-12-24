@@ -1,4 +1,4 @@
-import trip from "@public/trip.svg";
+import trip from "@public/images/trip.svg";
 
 export type experiencePage = "Experience1" | "Experience2" | "Experience3";
 

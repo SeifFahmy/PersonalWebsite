@@ -9,17 +9,17 @@ import TransitionPage from "./components/TransitionPage";
 const page = () => {
     return (
         <>
-            <TitlePage />
+            {/* <TitlePage />
             <TransitionPage page="About" />
             <AboutMePage />
             <TransitionPage page="Experience" />
             <ExperiencePage page="Experience1" />
             <TransitionPage page="Projects" />
-            <ProjectPage page="Project1" />
+            <ProjectPage page="Project1" /> */}
             <TransitionPage page="Awards" />
-            <AwardsPage />
+            {/* <AwardsPage />
             <TransitionPage page="Contact" />
-            <ContactPage />
+            <ContactPage /> */}
         </>
     );
 };

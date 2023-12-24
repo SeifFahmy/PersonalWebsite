@@ -1,5 +1,5 @@
-import bird from "@public/bird.webp";
-import logo from "@public/logo.svg";
+import bird from "@public/images/bird.webp";
+import logo from "@public/images/logo.svg";
 import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 import { AiOutlineGithub } from "react-icons/ai";
