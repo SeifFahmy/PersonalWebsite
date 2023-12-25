@@ -15,11 +15,11 @@ const useContactTransition = () => {
 
     const handleBlur = (
         setFocus: Dispatch<SetStateAction<boolean>>,
-        setContent: Dispatch<SetStateAction<boolean>>,
+        setHasContent: Dispatch<SetStateAction<boolean>>,
         ref: RefObject<HTMLInputElement> | RefObject<HTMLTextAreaElement>
     ) => {
         setFocus(false);
-        setContent(!!ref.current?.value.trim());
+        setHasContent(!!ref.current?.value.trim());
     };
 
     return {
