@@ -1,3 +1,4 @@
+"use client";
 import AboutMePage from "./components/AboutMePage";
 import AwardsPage from "./components/AwardsPage";
 import ContactPage from "./components/ContactPage";
@@ -10,18 +11,19 @@ import TransitionPage from "./components/TransitionPage";
 const page = () => {
     return (
         <>
-            <Cursor />
+            {/* <Cursor /> */}
             {/* <TitlePage />
-            <TransitionPage page="About" /> */}
+            <TransitionPage page="About" />
             <AboutMePage />
-            {/* <TransitionPage page="Experience" />
+            <TransitionPage page="Experience" />
             <ExperiencePage page="Experience1" />
             <TransitionPage page="Projects" />
             <ProjectPage page="Project1" />
             <TransitionPage page="Awards" />
             <AwardsPage />
-            <TransitionPage page="Contact" /> */}
-            <ContactPage />
+            <TransitionPage page="Contact" />
+            <ContactPage /> */}
+            <canvas id="splineCanvas" className="splineCanvas"></canvas>
         </>
     );
 };

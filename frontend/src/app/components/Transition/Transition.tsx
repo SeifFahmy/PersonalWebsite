@@ -1,11 +1,12 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "./Transition.module.css";
+import MainCanvas from "../MainCanvas";
+import { ReactNode } from "react";
 
 interface TransitionProps {
     title: string;
 
-    hero: StaticImageData;
-    heroAlt: string;
+    hero: ReactNode;
 
     auxiliary1: StaticImageData;
     auxiliary1Alt: string;
@@ -17,7 +18,6 @@ interface TransitionProps {
 const Transition = ({
     title,
     hero,
-    heroAlt,
     auxiliary1,
     auxiliary1Alt,
     auxiliary2,
@@ -27,8 +27,7 @@ const Transition = ({
         <div className={styles.container}>
             <h2>{title}</h2>
             <div className={styles.heroContainer}>
-                <Image className={styles.hero} src={hero} alt={heroAlt} />
-                <span className={styles.blur}></span>
+                <MainCanvas>{hero}</MainCanvas>
             </div>
             <Image
                 className={[styles.auxilliary, styles.aux1].join(" ")}

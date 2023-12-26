@@ -8,7 +8,7 @@
 
 html {
     font-size: 62.5%;
-    cursor: none;
+    /* cursor: none; */
 }
 
 body {
@@ -52,4 +52,9 @@ td {
     letter-spacing: 0.05rem;
 
     margin: 0;
+}
+
+.splineCanvas {
+    height: 100vh;
+    width: 100vw;
 }

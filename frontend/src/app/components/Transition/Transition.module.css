@@ -23,12 +23,7 @@
     --hero-size: 75vh;
 }
 
-.hero {
-    height: var(--hero-size);
-    width: auto;
-    object-fit: contain;
-    position: relative;
-}
+
 
 .blur {
     background: radial-gradient(var(--accentColour), var(--backgroundColour));

@@ -1,6 +1,10 @@
 import bird from "@public/images/bird.webp";
 import map from "@public/images/map.svg";
 import trip from "@public/images/trip.svg";
+import HouseModel from "../models/house";
+import { StaticImageData } from "next/image";
+import TrophyModel from "../models/trophy";
+import { ReactNode } from "react";
 
 export type transitionPage =
     | "About"
@@ -9,11 +13,23 @@ export type transitionPage =
     | "Awards"
     | "Contact";
 
-const pageProperties = {
+type transitionPageProperties = {
+    title: string;
+    hero: ReactNode;
+    auxiliary1: StaticImageData;
+    auxiliary1Alt: string;
+    auxiliary2: StaticImageData;
+    auxiliary2Alt: string;
+};
+
+interface PagePropertiesObject {
+    [key: string]: transitionPageProperties;
+}
+
+const pageProperties: PagePropertiesObject = {
     About: {
         title: "About Me",
-        hero: bird,
-        heroAlt: "bird",
+        hero: <HouseModel />,
         auxiliary1: map,
         auxiliary1Alt: "map",
         auxiliary2: trip,
@@ -22,8 +38,7 @@ const pageProperties = {
 
     Experience: {
         title: "Experience",
-        hero: bird,
-        heroAlt: "bird",
+        hero: <HouseModel />,
         auxiliary1: map,
         auxiliary1Alt: "map",
         auxiliary2: trip,
@@ -32,8 +47,7 @@ const pageProperties = {
 
     Projects: {
         title: "Projects",
-        hero: bird,
-        heroAlt: "bird",
+        hero: <HouseModel />,
         auxiliary1: map,
         auxiliary1Alt: "map",
         auxiliary2: trip,
@@ -42,8 +56,7 @@ const pageProperties = {
 
     Awards: {
         title: "Awards",
-        hero: bird,
-        heroAlt: "bird",
+        hero: <HouseModel />,
         auxiliary1: map,
         auxiliary1Alt: "map",
         auxiliary2: trip,
@@ -52,8 +65,7 @@ const pageProperties = {
 
     Contact: {
         title: "Contact",
-        hero: bird,
-        heroAlt: "bird",
+        hero: <HouseModel />,
         auxiliary1: map,
         auxiliary1Alt: "map",
         auxiliary2: trip,
