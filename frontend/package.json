@@ -11,6 +11,8 @@
   "dependencies": {
     "@react-three/drei": "^9.92.6",
     "@react-three/fiber": "^8.15.12",
+    "@splinetool/loader": "^1.0.16",
+    "@splinetool/r3f-spline": "^1.0.2",
     "@splinetool/runtime": "^1.0.16",
     "animate.css": "^4.1.1",
     "lodash.throttle": "^4.1.1",

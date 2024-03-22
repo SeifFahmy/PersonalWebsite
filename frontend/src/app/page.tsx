@@ -20,10 +20,10 @@ const page = () => {
             <TransitionPage page="Projects" />
             <ProjectPage page="Project1" />
             <TransitionPage page="Awards" />
-            <AwardsPage />
+            <AwardsPage /> */}
             <TransitionPage page="Contact" />
-            <ContactPage /> */}
-            <canvas id="splineCanvas" className="splineCanvas"></canvas>
+            {/* <ContactPage /> */}
+            {/* <canvas id="splineCanvas" className="splineCanvas"></canvas> */}
         </>
     );
 };
