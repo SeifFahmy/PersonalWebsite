@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    --header-margin: 10rem;
+}
+
+.container h2 {
+    margin-top: var(--header-margin);
+    margin-left: 15rem;
+}
+
+.heroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    --hero-size: 75vh;
+}
+
+
+
+.blur {
+    background: radial-gradient(var(--accentColour), var(--backgroundColour));
+    filter: blur(200px);
+    border-radius: 30%;
+
+    --size-factor: 0.9;
+    height: calc(var(--hero-size) * var(--size-factor));
+    width: calc(var(--hero-size) * var(--size-factor) * 0.7);
+
+    position: absolute;
+    z-index: -1;
+}
+
+.auxilliary {
+    position: absolute;
+
+    height: 13vh;
+    width: auto;
+    object-fit: contain;
+
+    --horizontal-margin: 25rem;
+    --vertical-margin: 10rem;
+}
+
+.aux1 {
+    right: var(--horizontal-margin);
+    top: calc(var(--vertical-margin) + var(--header-margin));
+}
+
+.aux2 {
+    left: var(--horizontal-margin);
+    bottom: var(--vertical-margin);
+}

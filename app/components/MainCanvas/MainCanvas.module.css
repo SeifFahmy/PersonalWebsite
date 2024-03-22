@@ -1,0 +1,7 @@
+.container {
+    --hero-size: 75vh;
+    height: var(--hero-size);
+    width: 45vw;
+    object-fit: contain;
+    position: relative;
+}

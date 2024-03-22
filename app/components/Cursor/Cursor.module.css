@@ -1,0 +1,32 @@
+.cursor {
+    --cursorSize: 1.5rem;
+
+    /* variables from JSX */
+    position: absolute;
+    left: calc(-1 * var(--cursorSize) / 2 + var(--positionX));
+    top: calc(-1 * var(--cursorSize) / 2 + var(--positionY));
+    z-index: 100;
+    pointer-events: none;
+
+    height: var(--cursorSize);
+    width: var(--cursorSize);
+    border-radius: 100%;
+    background-color: white;
+
+    /* transition-duration: 700ms;
+    transition-timing-function: ease-out; */
+    mix-blend-mode: difference;
+    --animationDurationSlow: 0.4s;
+    --animationDurationFast: 0.05s;
+    transition: background-color var(--animationDurationSlow) ease,
+        scale var(--animationDurationSlow) ease,
+        border var(--animationDurationSlow) ease,
+        left var(--animationDurationFast) ease-out,
+        top var(--animationDurationFast) ease-out;
+}
+
+.cursorHover {
+    background-color: transparent;
+    border: 0.2rem solid white;
+    scale: 1.4;
+}
