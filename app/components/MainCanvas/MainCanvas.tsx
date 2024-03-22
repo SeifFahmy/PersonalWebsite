@@ -5,7 +5,7 @@ import styles from "./MainCanvas.module.css";
 import { ReactNode } from "react";
 import useRotateModel from "@/app/hooks/useRotateModel";
 import HouseModel from "@/app/models/house";
-import SplineTestModel from "@/app/models/spline";
+// import SplineTestModel from "@/app/models/spline";
 
 interface Props {
     children: ReactNode;
@@ -20,7 +20,7 @@ const MainCanvas = ({ children }: Props) => {
                 <ambientLight args={[0xffffff, 0.4]} />
                 <hemisphereLight intensity={0.1} />
                 {/* {children} */}
-                <SplineTestModel />
+                {/* <SplineTestModel /> */}
             </Canvas>
         </div>
     );
