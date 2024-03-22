@@ -12,17 +12,17 @@ const page = () => {
     return (
         <>
             {/* <Cursor /> */}
-            {/* <TitlePage />
-            <TransitionPage page="About" />
+            <TitlePage />
+            {/* <TransitionPage page="About" /> */}
             <AboutMePage />
-            <TransitionPage page="Experience" />
+            {/* <TransitionPage page="Experience" /> */}
             <ExperiencePage page="Experience1" />
-            <TransitionPage page="Projects" />
+            {/* <TransitionPage page="Projects" /> */}
             <ProjectPage page="Project1" />
-            <TransitionPage page="Awards" />
-            <AwardsPage /> */}
-            <TransitionPage page="Contact" />
-            {/* <ContactPage /> */}
+            {/* <TransitionPage page="Awards" /> */}
+            <AwardsPage />
+            {/* <TransitionPage page="Contact" /> */}
+            <ContactPage />
             {/* <canvas id="splineCanvas" className="splineCanvas"></canvas> */}
         </>
     );
