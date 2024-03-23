@@ -11,12 +11,12 @@ import TransitionPage from "./components/TransitionPage";
 const page = () => {
     return (
         <>
-            <Cursor />
+            {/* <Cursor /> */}
             <TitlePage />
             {/* <TransitionPage page="About" /> */}
             <AboutMePage />
             {/* <TransitionPage page="Experience" /> */}
-            <ExperiencePage page="Experience1" />
+            <ExperiencePage page="Experience4" />
             {/* <TransitionPage page="Projects" /> */}
             <ProjectPage page="Project1" />
             {/* <TransitionPage page="Awards" /> */}
