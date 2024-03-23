@@ -19,14 +19,16 @@
 
 .navbarSection {
     font-size: medium;
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
     text-orientation: sideways;
     white-space: nowrap;
-
+    
+    transform: rotate(180deg);
     --transition-duration: 0.4s;
     transition: transform var(--transition-duration),
         font-weight var(--transition-duration);
     position: relative;
+
 }
 
 .navbarSection:link,
@@ -52,7 +54,7 @@
 
 .navbarSection:not(.logo):hover,
 .navbarSection:focus {
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(180deg);
     font-weight: 600;
 }
 
