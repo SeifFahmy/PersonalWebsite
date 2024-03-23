@@ -20,9 +20,7 @@
     --animationDurationFast: 0.05s;
     transition: background-color var(--animationDurationSlow) ease,
         scale var(--animationDurationSlow) ease,
-        border var(--animationDurationSlow) ease,
-        left var(--animationDurationFast) ease-out,
-        top var(--animationDurationFast) ease-out;
+        border var(--animationDurationSlow) ease;
 }
 
 .cursorHover {

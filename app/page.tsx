@@ -11,7 +11,7 @@ import TransitionPage from "./components/TransitionPage";
 const page = () => {
     return (
         <>
-            {/* <Cursor /> */}
+            <Cursor />
             <TitlePage />
             {/* <TransitionPage page="About" /> */}
             <AboutMePage />
