@@ -3,7 +3,7 @@
     padding: 5rem 10rem 5rem 3rem;
 
     display: flex;
-    flex-flow: column nowrap;   
+    flex-flow: column nowrap;
 }
 
 .page :last-child {
@@ -11,9 +11,10 @@
 }
 
 .headerContainer {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    flex: 1;   
+    flex: 1;
 
     margin-bottom: 2rem;
 }
@@ -21,18 +22,58 @@
 .headerContainer span:last-of-type {
     align-self: flex-end;
     text-align: right;
+    width: 30rem;
+}
+.headerContainer span:first-of-type {
+    width: 50rem;
 }
 
 .header {
     margin: 0;
     font-size: 8rem;
     font-weight: 700;
-    width: 30rem;
     line-height: 1.15;
+    /* mix-blend-mode: difference; */
+}
+
+.declaration {
+    position: absolute;
+    --width: 55rem;
+    --height: 4rem;
+    left: calc(50% - (var(--width) / 2));
+    top: calc(50% - (var(--height) / 2));
+
+    font-size: var(--height);
+    font-weight: 600;
+    text-wrap: nowrap;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 1) 10%,
+        rgba(255, 255, 255, 0) 90%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .scrollIcon {
     --scrollHeight: 2.5rem;
     height: var(--scrollHeight);
     width: var(--scrollHeight);
+}
+
+.triangle {
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    width: 0;
+    height: 0;
+    margin: auto;
+    /* display: inline; */
+    border-left: 40vw solid transparent;
+    border-right: 40vw solid transparent;
+    border-top: 60vh solid var(--accentColour); /* Adjust triangle height and color */
+    z-index: -1; /* Ensure triangle is behind content */
+    filter: blur(15rem);
 }

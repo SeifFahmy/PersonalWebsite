@@ -16,7 +16,7 @@ const page = () => {
             {/* <TransitionPage page="About" /> */}
             <AboutMePage />
             {/* <TransitionPage page="Experience" /> */}
-            <ExperiencePage page="Experience4" />
+            <ExperiencePage page="Experience1" />
             {/* <TransitionPage page="Projects" /> */}
             <ProjectPage page="Project1" />
             {/* <TransitionPage page="Awards" /> */}
