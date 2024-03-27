@@ -8,16 +8,13 @@ const ExperiencePage = ({ page }: { page: experiencePage }) => {
         useExperience(page);
 
     return (
-        <div className="layout">
-            <NavBar />
-            <About title={title} text={text} image={image} alt={alt}>
-                <ExperienceCard
-                    icon={icon}
-                    highlight={highlight}
-                    context={context}
-                />
-            </About>
-        </div>
+        <About title={title} text={text} image={image} alt={alt}>
+            <ExperienceCard
+                icon={icon}
+                highlight={highlight}
+                context={context}
+            />
+        </About>
     );
 };
 

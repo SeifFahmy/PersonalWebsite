@@ -83,7 +83,7 @@
 
 .arrow {
     position: absolute;
-    
+
     margin-left: 0.5rem;
     transition: transform ease-out var(--animation-time);
 }

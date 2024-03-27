@@ -2,12 +2,7 @@ import NavBar from "./NavBar";
 import Awards from "./Awards";
 
 const AwardsPage = () => {
-    return (
-        <div className="layout">
-            <NavBar />
-            <Awards />
-        </div>
-    );
+    return <Awards />;
 };
 
 export default AwardsPage;

@@ -9,6 +9,7 @@
 
     position: relative;
     max-height: calc(100vh - 2 * var(--vert-padding));
+    height: 100vh;
 }
 
 .container p {

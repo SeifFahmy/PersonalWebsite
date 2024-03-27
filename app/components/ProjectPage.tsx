@@ -7,12 +7,9 @@ const ProjectPage = ({ page }: { page: projectPage }) => {
     const properties = useProject(page);
 
     return (
-        <div className="layout">
-            <NavBar />
-            <AboutProject {...properties!}>
-                <ProjectModel model={properties.model} />
-            </AboutProject>
-        </div>
+        <AboutProject {...properties!}>
+            <ProjectModel model={properties.model} />
+        </AboutProject>
     );
 };
 

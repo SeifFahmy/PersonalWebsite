@@ -1,13 +1,14 @@
 import NavBar from "./NavBar";
 import Title from "./Title";
 
-const TransitionPage = () => {
+const TitlePage = () => {
     return (
-        <div className="layout">
-            <NavBar />
-            <Title />
-        </div>
+        // <div className="layout">
+        // {/* <NavBar /> */}
+
+        <Title />
+        // </div>
     );
 };
 
-export default TransitionPage;
+export default TitlePage;

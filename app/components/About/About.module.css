@@ -1,12 +1,14 @@
 .container {
     display: flex;
     justify-content: center;
-
+    
+    
     --vert-padding: 10rem;
     padding-right: 5rem;
     margin: var(--vert-padding) 15rem;
-
+    
     position: relative;
+    height: 100vh;
     max-height: calc(100vh - 2 * var(--vert-padding));   
 }
 
